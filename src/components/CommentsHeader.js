@@ -41,13 +41,3 @@ const CommentsHeader = ({ url }) => {
 };
 
 export default CommentsHeader;
-
-{
-  /* <ul>
-{commentItems.map((comment, i) => (
-  <li key={i}>
-    <Comments items={comment.data?.children} />
-  </li>
-))}
-</ul> */
-}
