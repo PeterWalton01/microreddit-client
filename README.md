@@ -1,70 +1,32 @@
-# Getting Started with Create React App
+# The RedditMicro Client.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was complete as part of the Codecademy Full-Stack Engineer course. Specifically the project covers the Reddit Client Portfolio Project. The application has been given the name The RedditMicro Client.
 
-## Available Scripts
+The purpose of the project is to provide an application that exercises the Reddit REST API. The feature of the API are simple and intuitive to use:
 
-In the project directory, you can run:
+> On the left a set of buttons are provided that navigate into a set of high level search areas. Once selected, the items from the selected areas appear on the right. Any images that are found in these items are show.
+>
+> Each item contains a speech bubble with a count of the number of comments for each items. Clicking on the speech button will reveal a list of the comments. Clicking again will hide the comments.
+>
+> There is a search dialogue that makes use of the search API call within the REST API. Once again all matching items will be shown.
+>
+> The application is responsive in design.
 
-### `npm start`
+## Some implementation details
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The interface make direct use of the API - undocumented JSON API: https://github.com/reddit-archive/reddit/wiki/JSON. This API does not require any form of OAuth flow.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The comment and search items are retrieved using the API after each request - there is no buffering or read ahead used as this would lead to an inefficient implementation.
 
-### `npm test`
+## How to use
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This is a react/redux application. No database is used. The application can be obtained via. a Github clone process and then by running the usual commands:
 
-### `npm run build`
+> npm install
+> npm run start
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This application will be deployed onto the web in the near future.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### License
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The code in this project can be freely copied and distributed provided the copies bear an appropriate acknowledgement.
