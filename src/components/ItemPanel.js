@@ -33,7 +33,7 @@ const ItemPanel = ({ record }) => {
       <div className="item-left">
         <div className="item-text">{record.title}</div>
         <div>
-          <img className="item-image" alt="" src={record.url} />
+          {record.url && <img className="item-image" alt="" src={record.url} />}
         </div>
         <div className="item-middle-panel">
           <span className="lm-05">
