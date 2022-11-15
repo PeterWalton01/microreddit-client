@@ -34,6 +34,7 @@ const ItemPanel = ({ record }) => {
         <div className="item-text">{record.title}</div>
         <div>
           {record.url && <img className="item-image" alt="" src={record.url} />}
+          {!record.url && <br />}
         </div>
         <div className="item-middle-panel">
           <span className="lm-05">
