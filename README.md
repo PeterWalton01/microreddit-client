@@ -25,7 +25,9 @@ This is a react/redux application. No database is used. The application can be o
 > npm install
 > npm run start
 
-This application will be deployed onto the web in the near future.
+This application is deployed at the following URL - https://micro-reddit-api.netlify.app.
+
+Next steps - implement the voting buttons.
 
 ### License
 
