@@ -91,7 +91,7 @@ header span {
   display: none;
 }
 
-.scree .panel-container {
+.panel-container {
   margin: 0.3rem;
 
   border-bottom: 10px solid lightgrey;
@@ -105,6 +105,7 @@ h3 {
 
 .panel-container {
   display: flex;
+  flex-direction: column;
 }
 
 .item-left {
