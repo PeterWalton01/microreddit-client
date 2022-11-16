@@ -92,8 +92,8 @@ header span {
 }
 
 .panel-container {
+  display: flex;
   margin: 0.3rem;
-
   border-bottom: 10px solid lightgrey;
   padding: 0.2rem;
   padding-bottom: 1rem;
@@ -103,13 +103,10 @@ h3 {
   margin-left: 10%;
 }
 
-.panel-container {
-  display: flex;
-  flex-direction: column;
-}
-
 .item-left {
   width: 85%;
+  display: flex;
+  flex-direction: column;
 }
 
 .item-right {
